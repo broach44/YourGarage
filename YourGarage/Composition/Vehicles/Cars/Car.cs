@@ -7,13 +7,9 @@ namespace YourGarage
     class Car
     {
         public FuelLevel FuelLevel { get; set; }
-        public CarColor CarColor { get; set; }
+        public VehicleColor CarColor { get; set; }
         public int Occupancy { get; set; }
 
-        public Car()
-        {
-
-        }
 
         public void Refuel()
         {
@@ -49,24 +45,5 @@ namespace YourGarage
             Console.WriteLine($"When slowing down this {Occupancy} person vehicle, be careful.");
         }
 
-    }
-    
-    enum CarColor
-    {
-        red,
-        yellow,
-        blue,
-        green,
-        orange,
-        purple
-    }
-
-    enum FuelLevel
-    {
-        Empty,
-        Quarter,
-        Half,
-        ThreeQuarters,
-        Full
     }
 }
